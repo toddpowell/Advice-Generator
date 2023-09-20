@@ -32,3 +32,4 @@ The designs were created to the following widths:
 - Weights: 800
 
 https://api.adviceslip.com/
+https://api.adviceslip.com/advice
