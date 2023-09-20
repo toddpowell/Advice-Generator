@@ -30,3 +30,5 @@ The designs were created to the following widths:
 
 - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
 - Weights: 800
+
+https://api.adviceslip.com/
