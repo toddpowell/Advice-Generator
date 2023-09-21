@@ -12,4 +12,32 @@
     --dark-blue: hsl(218, 23%, 16%);
 }
 
+.container {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    height: 332px;
+    width: 540px;
+    background: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 213px;
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
