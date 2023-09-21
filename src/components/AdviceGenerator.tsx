@@ -12,7 +12,7 @@ const AdviceGenerator = () => {
     advice: "",
   });
 
-  useEffect(() => {
+  const getAdvice = () => {
     fetch("https://api.adviceslip.com/advice")
       .then((response) => response.json())
       //   .then((data) => console.log(data));
@@ -23,21 +23,17 @@ const AdviceGenerator = () => {
         })
       )
       .catch((error) => console.error("Error: ", error));
+  };
+
+  useEffect(() => {
+    getAdvice();
   }, []);
 
   return (
     <>
-      <h1>
-        {/* {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : "Loading..."}*/}
-        {/* {data ? (
-          <p>
-            {data.id} - {data.advice}
-          </p>
-        ) : (
-          "Loading..."
-        )} */}
-        {data.id} - {data.advice}
-      </h1>
+      <h1>{data.id}</h1>
+      <h1>{data.advice}</h1>
+      <button onClick={() => getAdvice()}>Get Advice</button>
     </>
   );
 };
