@@ -1,5 +1,5 @@
 import "./AdviceGenerator.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 <style>
   @import
@@ -18,8 +18,8 @@ const AdviceGenerator = () => {
       //   .then((data) => console.log(data));
       .then((data) =>
         setData({
-          id: data.slip.id,
           advice: data.slip.advice,
+          id: data.slip.id,
         })
       )
       .catch((error) => console.error("Error: ", error));
@@ -28,6 +28,14 @@ const AdviceGenerator = () => {
   return (
     <>
       <h1>
+        {/* {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : "Loading..."}*/}
+        {/* {data ? (
+          <p>
+            {data.id} - {data.advice}
+          </p>
+        ) : (
+          "Loading..."
+        )} */}
         {data.id} - {data.advice}
       </h1>
     </>
