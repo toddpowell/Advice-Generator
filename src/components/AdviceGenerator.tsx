@@ -43,7 +43,7 @@ const AdviceGenerator = () => {
       <div className="wrapper">
         <div className="card">
           <div className="id">
-            <p>ADVICE # {data.id}</p>
+            <p>ADVICE #{data.id}</p>
           </div>
           <div className="advice">
             <p>{data.advice}</p>

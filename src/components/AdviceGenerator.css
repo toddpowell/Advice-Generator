@@ -39,5 +39,46 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    margin-top: 47px;
 }
 
+.id p {
+    font-size: 14px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+}
+
+.advice p {
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+.dice {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35px;
+}
+
+.dice:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px hsl(150, 100%, 66%);
+}
+
+.dice img {
+    animation: rotate 5s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
