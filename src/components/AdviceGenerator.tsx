@@ -1,6 +1,7 @@
 import "./AdviceGenerator.css";
 import { useState, useEffect } from "react";
 import desktopDivider from "../assets/images/pattern-divider-desktop.svg";
+import mobileDivider from "../assets/images/pattern-divider-mobile.svg";
 import dice from "../assets/images/icon-dice.svg";
 
 {
@@ -49,7 +50,11 @@ const AdviceGenerator = () => {
             <p>{data.advice}</p>
           </div>
           <div className="image">
-            <img src={desktopDivider} alt="divider" />
+            <picture>
+              <source media="(min-width: 376px)" srcSet={desktopDivider} />
+              <source media="(max-width: 375px)" srcSet={mobileDivider} />
+              <img src={desktopDivider} alt="divider" />
+            </picture>
           </div>
         </div>
         <div className="dice">
